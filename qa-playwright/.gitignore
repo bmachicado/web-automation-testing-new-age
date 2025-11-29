@@ -1,0 +1,23 @@
+# Archivo .gitignore
+
+# 1. Dependencias de Node.js
+# No incluir la carpeta de dependencias del proyecto.
+/node_modules
+
+# 2. Archivos de configuración o resultados de testing/CI (Playwright)
+# Archivos de resultados de pruebas
+/test-results/
+/playwright-report/
+
+# 3. Archivos generados comúnmente en entornos de Node
+# Archivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Archivos de caché/build
+/dist
+/build
+.env
+.DS_Store

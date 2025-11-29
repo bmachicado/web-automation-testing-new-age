@@ -1,0 +1,17 @@
+{
+  "name": "qa-playwright",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "ui": "playwright test --ui",
+    "env:dev": "ENV=dev playwright test",
+    "env:stg": "ENV=stg playwright test",
+    "env:prod": "ENV=prod playwright test",
+    "auth": "SETUP=1 playwright test tests/setup/auth.spec.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.50.0",
+    "playwright": "1.50.0",
+    "@types/node": "^18.0.0"
+  }
+}
